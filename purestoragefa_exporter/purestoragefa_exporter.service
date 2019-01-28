@@ -1,0 +1,19 @@
+[Unit]
+Description=Purestoragefa Prometheus Exporter
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/var/lib/heketi
+ExecStart=/usr/bin/purestoragefa_exporter -u pureuser -f purestoragefa_exporter/pure-inventory.yaml -p 8085
+Restart=always
+RestartSec=30s
+StartLimitInterval=0
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=purestoragefa_exporter
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

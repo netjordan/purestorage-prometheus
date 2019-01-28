@@ -1,0 +1,19 @@
+---
+# file: /etc/purestoragefa-exporter/pure-inventory.yaml
+device_inventory:
+  - fqdn: flasharray1.pure.com
+    model: flasharray
+    usernames:
+      pureuser: API-token
+    collector:
+      enabled: true
+      debug_level: DEBUG
+      logs: /var/log/flasharrray1.log
+  - fqdn: flasharray2.pure.com
+    model: flasharray
+    usernames:
+      pureuser: API-token
+    collector:
+      enabled: true
+      debug_level: DEBUG
+      logs: /var/log/flasharray2.log

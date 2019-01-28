@@ -1,0 +1,2 @@
+include purestoragefa_exporter/*.yaml
+include purestoragefa_exporter/*.service

@@ -1,0 +1,96 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 1,
+  "id": 5491,
+  "links": [
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [
+        "Purestorage",
+        "Flasharray"
+      ],
+      "targetBlank": true,
+      "type": "dashboards"
+    }
+  ],
+  "panels": [
+    {
+      "content": "<style>\ntable, th, td {\n    border: 1px solid white;\n    padding: 7px;\n}\n</style>\n\nThe table below provides a map to available detail views depending on your area of interest:\n<br><br>\n\n<table>\n<tr>\n<th width='15%'>Dashboard Name</th>\n<th width='25%'>Description</th>\n<th width='60%'>When to Use</th>\n</tr>\n\n<tr>\n<td><a href='/dashboard/db/prometheus-exporter'>Purestorage Prometheus Exporter</a></td>\n<td>iistatistics about the exporter itself inclusing if it is up or down</td>\n<td>Overview of the FlashArray Exporter</td>\n</tr>\n\n<tr>\n<td><a href='/dashboard/db/purestorage-array-prometheus'>Purestorage Prometheus Array</a></td>\n<td>Highlights, capacity and workload overwview</td>\n<td>Overview of the FlashArray status and its performances including power consumption and temperature and number of open events</td>\n</tr>\n\n<tr>\n<td><a href='/dashboard/db/purestorage-volumes-prometheus'>Purestorage Prometheus Volume</a></td>\n<td>Per volumes overview of capcity and performance metrics</td>\n<td>Detailed overview of each volume including: Size, efficiency factors, latency, throughput and IOPS</td>\n</tr>\n\n</table>",
+      "editable": true,
+      "error": false,
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "links": [],
+      "mode": "html",
+      "style": {},
+      "title": "Solidfire Dashboard Map",
+      "transparent": false,
+      "type": "text"
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 16,
+  "style": "dark",
+  "tags": [
+    "Purestorage",
+    "FlashArray"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now/d",
+    "to": "now/d"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ]
+  },
+  "timezone": "browser",
+  "title": "Purestorage Prometheus Exporter",
+  "uid": "74vSWYhiz",
+  "version": 9
+}
