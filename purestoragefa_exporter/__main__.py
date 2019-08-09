@@ -159,16 +159,16 @@ def main():
             # get array name
             logger.info('Instantiated PurestorageCollector for %s'
                         'Exporting...', fa['fqdn'])
-        # Register the collectors with Prometheus client
-        REGISTRY.register(CollectMany(collectors))
-        # Keep it running otherwise http server won't be always up
-        logger.info('Exporting completed for %s.', fa['fqdn'])
-        # invalidate API session cookies with Flasharray
-        session.invalidate_cookie()
-        logger.info('API session closed for %s.', fa['fqdn'])
-        while True:
-            # It doesn't matter how long i sleep
-            time.sleep(300)
+            # Register the collectors with Prometheus client
+            REGISTRY.register(CollectMany(collectors))
+            # Keep it running otherwise http server won't be always up
+            logger.info('Exporting completed for %s.', fa['fqdn'])
+            # invalidate API session cookies with Flasharray
+            session.invalidate_cookie()
+            logger.info('API session closed for %s.', fa['fqdn'])
+            while True:
+                # It doesn't matter how long i sleep
+                time.sleep(300)
     except ValueError as ve:
         logger.exception(msg, ve)
     except ImportError as ie:
